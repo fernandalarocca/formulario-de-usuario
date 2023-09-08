@@ -1,27 +1,41 @@
-# FormularioDeUsuario
+# Formulário de Usuário
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+Esse projeto foi desenvolvido à pedido do professor da disciplina Programação Orientada a Objetos para Web
 
-## Development server
+## Reactive Forms
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Criar um formulário de cadastro de usuário utilizando Reactive Forms no Angular. O formulário deve coletar informações como o nome e o endereço de e-mail do usuário. Além disso, você precisa realizar a validação dos campos para garantir que os dados inseridos sejam válidos antes de enviar o formulário.
 
-## Code scaffolding
+### Passos:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Configuração do Projeto:
 
-## Build
+1. Crie um novo projeto Angular usando o Angular CLI.
+2. Crie um componente chamado user-form que será responsável por exibir o formulário.
+3. Formulário de Cadastro:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Abra o arquivo HTML do componente user-form e crie um formulário que inclua os seguintes campos:
 
-## Running unit tests
+1. Nome (input de texto)
+2. E-mail (input de e-mail)
+3. Botão de envio do formulário
+4. Utilize Reactive Forms para criar e gerenciar o formulário.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Validação de Campos:
 
-## Running end-to-end tests
+##### Implemente a validação dos campos:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. O campo "Nome" deve ser obrigatório.
+2. O campo "E-mail" deve ser obrigatório e conter um endereço de e-mail válido.
 
-## Further help
+#### Manipulação de Dados:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Crie um método para lidar com o envio do formulário. Quando o formulário for enviado, os dados inseridos devem ser exibidos no console do navegador.
+
+#### Teste:
+
+1. Inicie o servidor de desenvolvimento Angular e teste o formulário em seu navegador.
+2. Certifique-se de que a validação de campos está funcionando corretamente.
+3. Verifique se os dados do formulário são exibidos no console quando o formulário é enviado.
+
+##### Lembre-se de utilizar o módulo ReactiveFormsModule para trabalhar com Reactive Forms.
